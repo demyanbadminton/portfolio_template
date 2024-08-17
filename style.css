@@ -1,0 +1,188 @@
+.section_home {
+    height: 100vh;
+    padding: 0 20px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header*/ 
+
+.header {
+    padding: 50px 0;
+    border-bottom: 1px solid #828282;
+}
+.header_list {
+    display: flex;
+    justify-content: space-between;
+}
+.header_link {
+    text-decoration: none;
+    color: #828282;
+    font-size: 18px;
+}
+
+.header_link:hover{
+    color: #000;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.img_wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-size: 47px;
+    font-weight: 600;
+    max-width: 123px;
+}
+
+h2{
+    font-size: 18px;
+    max-width: 155px;
+}
+
+.txt {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.txt_wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_title{
+    font-size: 34px;
+    color: #070707;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+}  
+
+.main_text{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 485px;
+}
+
+.section_about{
+    height: 100vh;
+    background-color: #F6F6F6;
+    padding: 150px 0 100px 0;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.section_skills{
+    padding: 150px 0 100px 0;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.card_skills{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.skills_text{
+    margin-bottom: 100px;
+}
+
+.portfolio{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 150px;
+}
+
+.section_portfolio{
+    background: #F6F6F6;
+    padding: 50px 20px;
+}
+
+.portfolio_text{
+    text-decoration: underline;
+    margin-bottom: 50px;
+}
+
+.portfolio_img{
+    width: 100%;
+}
+
+.contacts{
+    height: 100vh;
+    padding: 200px 0;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+.contacts_wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contacts_icons{
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    gap: 50px;
+}
+
+.footer_text{
+    color: #828282;
+}
+
+.contacts_button{
+    margin-bottom: 50px;
+    max-width: 320px;
+}
+
+.welcome_text{
+    max-width: 260px;
+}
+
+.main_img{
+    width: 100%;
+}
+
+@media (max-width: 1200px){
+    .header_list{
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 1000px){
+    .card_skills{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .footer_text{
+        margin-bottom: 20px;
+    }
+
+    .denisnovik{
+        margin-left: 20px;
+    }
+}
