@@ -1,6 +1,6 @@
 .section_home {
-    height: 100vh;
-    padding: 0 20px;
+    padding: 10px 20px;
+    box-sizing: border-box;
 }
 .container {
     max-width: 1200px;
@@ -17,6 +17,7 @@
     display: flex;
     justify-content: space-between;
 }
+
 .header_link {
     text-decoration: none;
     color: #828282;
@@ -74,17 +75,14 @@ h2{
 }
 
 .section_about{
-    height: 100vh;
     background-color: #F6F6F6;
     padding: 150px 0 100px 0;
     box-sizing: border-box;
-    padding: 0 20px;
 }
 
 .section_skills{
     padding: 150px 0 100px 0;
     box-sizing: border-box;
-    padding: 0 20px;
 }
 
 .card_skills{
@@ -97,7 +95,6 @@ h2{
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    
 }
 
 .skills_text{
@@ -163,6 +160,15 @@ h2{
 
 .main_img{
     width: 100%;
+    margin-bottom: 20px;
+}
+
+.menu{
+    display: none;
+}
+
+.main_img_mob{
+    display: none;
 }
 
 @media (max-width: 1200px){
@@ -184,5 +190,47 @@ h2{
 
     .denisnovik{
         margin-left: 20px;
+    }
+}
+
+@media (max-width: 500px){
+    .header{
+        display: none;
+    }
+
+    .main_text{
+        padding: 0 20px;
+    }
+
+    .txt {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    h2{
+        padding-left: 20px;
+    }
+
+    .menu{
+         display: flex;
+         justify-content: end;
+         
+    }
+
+    .portfolio{
+        padding: 0;
+    }
+
+    .desktop_img{
+        display: none;
+    }
+
+    .main_img_mob{
+        display: block;
+    }
+
+    .card_skills{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
     }
 }
